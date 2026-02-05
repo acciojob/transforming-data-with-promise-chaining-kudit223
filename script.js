@@ -50,21 +50,21 @@ btn.addEventListener('click',()=>{
     inputField.value='';
     promise1(inputValue)
     .then((data)=>{
-        output.innerHTML=`Result:${data}`;
+        output.innerHTML=`Result: ${data}`;
         return promise2(data)
     })
     .then(data=>{
-        output.innerHTML=`Result:${data}`;
+        output.innerHTML=`Result: ${data}`;
         return promise3(data)
     })
     .then(data=>{
-        output.innerHTML=`Result:${data}`;
+        output.innerHTML=`Result: ${data}`;
         return promise4(data)
     })
     .then(data=>{
-        output.innerHTML=`Result:${data}`;
+        output.innerHTML=`Result: ${data}`;
         return promise5(data)
     }).then(data=>{
-        output.innerHTML=`Final Result:${data}`;
+        output.innerHTML=`Final Result: ${data}`;
     })
 })
